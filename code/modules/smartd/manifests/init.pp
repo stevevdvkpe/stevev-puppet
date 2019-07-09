@@ -10,9 +10,9 @@ class smartd {
 			# from modules/smartd/files/smartd.conf
 			"puppet:///modules/smartd/smartd.conf",
 		],
-		mode    => 444,
-		owner   => root,
-		group   => root,
+		mode    => "444",
+		owner   => "root",
+		group   => "root",
 		# package must be installed before configuration file
 		require => Package["smartmontools"],
 	}
