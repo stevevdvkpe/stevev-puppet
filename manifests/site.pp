@@ -1,4 +1,4 @@
-node ip-10-0-20-122 {
+node ip-10-0-20-123 {
 	include puppet
 	include smartd
 }
