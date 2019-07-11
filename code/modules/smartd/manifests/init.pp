@@ -1,9 +1,10 @@
 class smartd {
 	package {
-		"smartmontools": ensure => installed;
+		"smartmontools": ensure => purged;
 	}
 
 	file { "/etc/smartd.conf":
+		ensure  => absent,
 		source  => [
 			# from modules/smartd/files/$hostname/smartd.conf
 			"puppet:///modules/smartd/$hostname/smartd.conf",
