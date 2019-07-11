@@ -20,9 +20,9 @@ class smartd {
 
 	service { "smartd":
 		# automatically start at boot time
-		enable     => true,
+		enable     => false,
 		# restart service if it is not running
-		ensure     => running,
+		ensure     => stopped,
 		# "service smartd status" returns useful service status info
 		hasstatus  => true,
 		# "service smartd restart" can restart service
